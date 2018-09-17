@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="text/javascript">
+        window.document.write("hello world <br>");
+        document.write("hello world <br>"); //everything is a child of window so you shouldn;t have to write it out
+
+        var myName = "Sarah";
+        document.write(myName + "<br>");
+
+        //for debugging
+        console.log(myName);
+    </script>
+
+    <p onclick="alert('you clicked me');">Click Here</p>
+
+    <img src="maui.jpg" alt="Maui" id="maui">
+    <p onclick="alert(document.getElementById('maui').src);">What is the source?</p>    
+    <p onclick="alert(document.getElementById('maui').src = 'moana.jpg');">Change Image Source</p>
+
+
+    <br><br>
+    <script src="5scripts.js"></script>
+    
+    
+
+
+</body>
+</html>
