@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+        var animal = "horse";
+    
+        function number1(){
+            animal = "dog";         //variables w/out var in front are automatically global
+            document.write(animal);  
+            
+            for(let i = 0; i<3; i++){ //let is not a global var. Only available in the block it was declared in
+                document.write( "<br>" + i);
+            }
+            //document.write(i); 
+        }
+        
+        function number2(){
+            document.write(animal);            
+    }
+
+        </script>
+
+</head>
+<body>
+    <h1>Scope of Variables</h1>
+    <script>
+        number1();
+        document.write("<br>");
+        number2();
+    </script>
+    
+</body>
+</html>

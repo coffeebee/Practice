@@ -1,1 +1,1 @@
-document.write("<br><br><footer>Thank you for visiting my page</footer>")
+document.write("<footer>Thank you for visiting my page</footer>")
