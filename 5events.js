@@ -24,7 +24,13 @@ secondButton.addEventListener("click", function(){
 
 document.getElementById("lists").addEventListener("click",function(){
     var listItems = document.getElementsByTagName("li");
-    for(leti = 0; i<listItems.length; i++){
+    var item = document.getElementById("addAnItem").value;
+
+    for(let i = 0; i<listItems.length; i++){
         console.log(listItems[i].innerHTML);
     }
+
+    document.getElementById('theList').innerHTML +="<li>" +item+ "</li>";
+
+
 })
