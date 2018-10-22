@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 1</title>
+    <script>
+      <!--
+
+        function checkText(form) {
+         //create a variable myValueLength and assign it the LENGTH of the text box
+            var myValueLength = form.myText.value.length;
+         //create a variable myValue and assign it the VALUE of the text box
+            var myValue = form.myText.value;
+         //create an if statement that is checking to see myValueLength < 1
+            if(myValueLength < 1){            
+         //if the value is less than 1, create an alert box asking users to enter a VALUE
+                alert("Please enter a value.")
+            }
+         // else alert the value entered
+            else
+                alert("You entered " + myValue);
+         //put the cursor on the text box using th focus() method
+            form.myText.focus();
+
+        }
+
+      //-->
+    </script>
+  </head>
+  <body>
+    <h3>JavaScript Form Validation</h3>
+    <hr />
+    <form name="myForm" id="myForm">
+      Input data:
+      <input type="text" name="myText">
+      <p>
+      <input type="button" value="Check Input" onclick="checkText(this.form);" /> <input type="reset">
+      </p>
+    </form>
+
+  </body>
+</html>

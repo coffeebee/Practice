@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 4</title>
+    <script>
+      function isSelected(form){
+        //create a variable len that holds the number of select options
+        var len = form.mySelect.length;
+        //create a for loop  using len
+        for(i=0; i<len; i++){
+            alert(form.mySelect[i].value);
+            alert(form.mySelect[i].isSelected);
+            alert(form.mySelect[i]);
+        }
+          //alert the value for each option
+
+          //alert the boolean selected for each option
+
+          //alert the text property
+      }
+    </script>
+  </head>
+  <body>
+    <h3>JavaScript Forms</h3>
+    <hr />
+    <form name="myForm" id="myForm">
+      Select an item<br />
+      <select name="mySelect">
+        <option value="1">First option</option>
+        <option value="2">Second option</option>
+        <option value="3">Third option</option>
+      </select>
+      <p>
+        <input type="button" value="Check Selection" onclick="isSelected(this.form);" />
+        <input type="reset" />
+      </p>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 3</title>
+    <script>
+    function isChecked(form) {
+      //create a variable len that holds the number of elements in the radio box array
+        var len = form.myRadio.length;
+
+    // Create for loop to loop through each radio button
+        for(i=0; i<len; i++){
+            alert(form.myRadio[i].value);
+            alert(form.myRadio[i].checked);
+        }    
+
+         //alert the value of the radio button
+
+         //alert the checked property of each radio button
+
+
+    }
+    </script>
+  </head>
+  <body>
+    <h3>JavaScript Forms</h3>
+    <hr />
+    <form name="myForm" id="myForm">
+      Select a radio button<br />
+      1<input type="radio" name="myRadio" value="First radio button" />
+      2<input type="radio" name="myRadio" value="Second radio button" />
+      3<input type="radio" name="myRadio" value="Third radio button" />
+      <p>
+      <input type="button" value="Check Input" onclick="isChecked(this.form);" />
+      <input type="reset" />
+      </p>
+    </form>
+
+  </body>
+</html>
